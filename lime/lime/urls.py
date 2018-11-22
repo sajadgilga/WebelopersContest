@@ -21,5 +21,4 @@ from mainpage import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', views.login_)
-
 ]

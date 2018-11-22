@@ -15,7 +15,7 @@ def login_(request):
             login(request, user)
             return HttpResponseRedirect("/home")
         return render(request, "login.html", {"error": True})
-    return render(request, "login.html")
+    return render(request, "login_form.html")
 
 
 @login_required(login_url="/login")
