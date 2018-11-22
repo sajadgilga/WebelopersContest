@@ -1,4 +1,4 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
@@ -16,6 +16,10 @@ def login_(request):
             return HttpResponseRedirect("/home")
         return render(request, "login.html", {"error": True})
     return render(request, "login_form.html")
+
+
+def logout_(request):
+    logout(request)
 
 
 @login_required(login_url="/login")
