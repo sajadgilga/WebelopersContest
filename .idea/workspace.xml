@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="51ed320e-5724-4ce8-b297-fc9a467d26e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lime/lime/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lime/lime/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +33,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="py" value="69" />
           <entry key="py@webelopers" value="15" />
-          <entry key="txt" value="17" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="15" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="Python" value="69" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -49,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lime/lime/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="441">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#628#660#0" expanded="true" />
               </folding>
@@ -59,24 +72,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lime/mainpage/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lime/mainpage/admin.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lime/mainpage/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lime/mainpage/models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lime/mainpage/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lime/lime/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            <state relative-caret-position="960">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>te,l</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lime/mainpage/views.py" />
+        <option value="$PROJECT_DIR$/lime/lime/urls.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1366" />
@@ -118,6 +181,730 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/lime/urls.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/accordion.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/accordion.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/accordion.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/accordion.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/ad.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/ad.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/api.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/api.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/breadcrumb.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/breadcrumb.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/button.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/button.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/card.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/card.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/checkbox.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/checkbox.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/checkbox.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/checkbox.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/comment.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/comment.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/container.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/container.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dimmer.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dimmer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dimmer.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dimmer.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/divider.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/divider.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dropdown.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dropdown.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dropdown.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/dropdown.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/embed.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/embed.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/embed.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/embed.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/feed.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/feed.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/flag.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/flag.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/form.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/form.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/form.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/form.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/grid.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/grid.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/header.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/header.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/icon.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/icon.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/image.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/image.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/input.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/input.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/item.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/item.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/label.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/label.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/list.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/list.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/loader.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/loader.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/menu.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/menu.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/message.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/message.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/modal.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/modal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/modal.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/modal.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/nag.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/nag.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/nag.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/nag.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/placeholder.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/placeholder.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/popup.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/popup.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/popup.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/popup.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/progress.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/progress.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/progress.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/progress.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/rail.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/rail.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/rating.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/rating.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/rating.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/rating.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/reset.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/reset.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/reveal.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/reveal.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/search.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/search.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/search.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/search.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/segment.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/segment.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/shape.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/shape.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/shape.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/shape.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sidebar.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sidebar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sidebar.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sidebar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/site.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/site.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/site.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/site.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/statistic.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/statistic.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/step.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/step.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sticky.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sticky.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sticky.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/sticky.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/tab.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/tab.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/tab.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/tab.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/table.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/table.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/transition.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/transition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/transition.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/transition.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/visibility.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/components/visibility.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/semantic.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/semantic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/semantic.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/semantic.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/basic/assets/fonts/icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/basic/assets/fonts/icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/basic/assets/fonts/icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/basic/assets/fonts/icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/brand-icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/brand-icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/brand-icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/brand-icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/brand-icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/outline-icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/outline-icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/outline-icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/outline-icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/fonts/outline-icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/default/assets/images/flags.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/github/assets/fonts/octicons-local.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/github/assets/fonts/octicons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/github/assets/fonts/octicons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/github/assets/fonts/octicons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/material/assets/fonts/icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/material/assets/fonts/icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/material/assets/fonts/icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/material/assets/fonts/icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/dist/themes/material/assets/fonts/icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/gulpfile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/behaviors/api.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/behaviors/form.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/behaviors/visibility.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/collections/breadcrumb.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/collections/form.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/collections/grid.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/collections/menu.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/collections/message.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/collections/table.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/button.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/container.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/divider.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/flag.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/header.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/icon.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/image.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/input.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/label.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/list.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/loader.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/placeholder.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/rail.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/reveal.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/segment.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/elements/step.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/globals/reset.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/globals/site.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/globals/site.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/accordion.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/accordion.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/checkbox.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/checkbox.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/dimmer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/dimmer.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/dropdown.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/dropdown.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/embed.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/embed.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/modal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/modal.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/nag.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/nag.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/popup.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/popup.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/progress.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/progress.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/rating.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/rating.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/search.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/search.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/shape.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/shape.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/sidebar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/sidebar.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/sticky.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/sticky.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/tab.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/tab.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/transition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/modules/transition.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/views/ad.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/views/card.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/views/comment.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/views/feed.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/views/item.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/definitions/views/statistic.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/semantic.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/breadcrumb.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/breadcrumb.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/form.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/form.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/grid.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/grid.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/menu.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/menu.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/message.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/message.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/table.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/collections/table.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/container.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/container.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/divider.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/divider.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/flag.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/flag.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/header.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/icon.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/icon.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/image.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/image.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/input.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/input.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/label.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/label.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/list.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/list.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/loader.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/loader.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/rail.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/rail.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/reveal.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/reveal.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/segment.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/segment.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/step.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/elements/step.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/globals/reset.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/globals/reset.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/globals/site.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/accordion.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/accordion.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/chatroom.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/chatroom.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/checkbox.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/checkbox.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/dimmer.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/dimmer.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/dropdown.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/dropdown.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/embed.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/embed.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/modal.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/modal.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/nag.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/nag.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/popup.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/popup.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/progress.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/progress.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/rating.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/rating.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/search.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/search.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/shape.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/shape.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/sidebar.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/sidebar.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/sticky.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/sticky.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/tab.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/tab.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/transition.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/modules/transition.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/ad.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/ad.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/card.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/card.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/comment.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/comment.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/feed.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/feed.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/item.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/item.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/statistic.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/site/views/statistic.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/theme.config</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/theme.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/amazon/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/amazon/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/amazon/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/assets/fonts/icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/assets/fonts/icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/assets/fonts/icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/assets/fonts/icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/collections/table.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/collections/table.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/elements/icon.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/elements/icon.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/elements/step.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/elements/step.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/globals/reset.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/globals/reset.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/modules/progress.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/modules/progress.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/views/card.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/basic/views/card.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/bookish/elements/header.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/bookish/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/bootstrap3/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/bootstrap3/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/collections/form.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/collections/form.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/collections/menu.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/collections/menu.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/elements/header.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/modules/accordion.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/modules/accordion.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/views/comment.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/chubby/views/comment.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/collections/table.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/collections/table.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/elements/header.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/modules/progress.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/modules/progress.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/views/card.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/classic/views/card.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/colored/modules/checkbox.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/colored/modules/checkbox.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/brand-icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/brand-icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/brand-icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/brand-icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/brand-icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/outline-icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/outline-icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/outline-icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/outline-icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/fonts/outline-icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/assets/images/flags.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/breadcrumb.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/breadcrumb.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/form.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/form.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/grid.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/grid.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/menu.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/menu.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/message.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/message.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/table.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/collections/table.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/container.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/container.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/divider.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/divider.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/flag.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/flag.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/header.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/icon.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/icon.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/image.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/image.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/input.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/input.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/label.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/label.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/list.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/list.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/loader.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/loader.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/placeholder.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/placeholder.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/rail.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/rail.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/reveal.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/reveal.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/segment.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/segment.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/step.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/elements/step.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/globals/reset.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/globals/reset.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/globals/site.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/accordion.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/accordion.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/chatroom.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/chatroom.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/checkbox.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/checkbox.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/dimmer.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/dimmer.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/dropdown.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/dropdown.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/embed.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/embed.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/modal.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/modal.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/nag.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/nag.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/popup.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/popup.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/progress.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/progress.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/rating.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/rating.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/search.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/search.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/shape.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/shape.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/sidebar.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/sidebar.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/sticky.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/sticky.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/tab.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/tab.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/transition.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/modules/transition.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/ad.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/ad.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/card.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/card.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/comment.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/comment.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/feed.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/feed.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/item.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/item.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/statistic.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/default/views/statistic.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/duo/elements/loader.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/duo/elements/loader.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/fixed-width/collections/grid.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/fixed-width/collections/grid.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/fixed-width/modules/modal.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/fixed-width/modules/modal.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/flat/collections/form.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/flat/collections/form.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/flat/globals/site.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/flat/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/assets/fonts/octicons-local.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/assets/fonts/octicons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/assets/fonts/octicons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/assets/fonts/octicons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/breadcrumb.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/form.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/form.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/grid.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/menu.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/menu.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/message.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/message.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/collections/table.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/icon.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/icon.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/image.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/input.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/input.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/label.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/label.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/segment.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/segment.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/step.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/elements/step.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/modules/dropdown.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/modules/dropdown.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/github/modules/popup.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/gmail/collections/message.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/gmail/collections/message.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/instagram/views/card.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/instagram/views/card.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/assets/fonts/icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/assets/fonts/icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/assets/fonts/icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/assets/fonts/icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/assets/fonts/icons.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/collections/menu.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/collections/menu.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/elements/header.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/elements/header.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/elements/icon.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/elements/icon.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/globals/site.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/modules/dropdown.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/modules/dropdown.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/modules/modal.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/material/modules/modal.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/pulsar/elements/loader.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/pulsar/elements/loader.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/raised/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/raised/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/resetcss/globals/reset.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/resetcss/globals/reset.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/round/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/round/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/rtl/globals/site.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/rtl/globals/site.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/striped/modules/progress.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/striped/modules/progress.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/timeline/views/feed.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/timeline/views/feed.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/twitter/elements/button.overrides</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/src/themes/twitter/elements/button.variables</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/components/create.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/components/init.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/components/update.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/distributions/create.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/distributions/init.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/distributions/update.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/publish.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/register.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/admin/release.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/build.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/build/assets.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/build/css.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/build/javascript.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/check-install.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/clean.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/collections/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/collections/admin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/collections/build.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/collections/internal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/collections/rtl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/github.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/oauth.example.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/release.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/component-package.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/composer.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/css-package.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/less-package.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/admin/templates/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/defaults.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/docs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/npm/gulpfile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/project/config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/project/install.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/project/release.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/tasks.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/config/user.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/docs/build.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/docs/metadata.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/docs/serve.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/install.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/rtl/build.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/rtl/watch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/version.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/static/semantic/tasks/watch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lime/template/semantictut.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,19 +969,27 @@
       <option name="project" value="LOCAL" />
       <updated>1542878321544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login added">
+      <created>1542878532124</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542878532124</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="34" width="1920" height="1046" extended-state="7" />
+    <frame x="0" y="34" width="1920" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26126608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="manage.py@webelopers" visible="true" weight="0.32995495" />
+      <window_info anchor="bottom" id="manage.py@webelopers" weight="0.32995495" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32995495" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32995495" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -202,7 +997,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32995495" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -220,23 +1015,60 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mainpage started" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainpage started" />
+    <MESSAGE value="login added" />
+    <option name="LAST_COMMIT_MESSAGE" value="login added" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lime/lime/urls.py">
+    <entry file="file://$PROJECT_DIR$/lime/lime/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="960">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lime/mainpage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lime/mainpage/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lime/mainpage/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lime/mainpage/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lime/mainpage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#628#660#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lime/lime/settings.py">
+    <entry file="file://$PROJECT_DIR$/lime/lime/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="441">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#628#660#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
