@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
-def signup(request):
+def signup_(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -19,7 +19,7 @@ def signup(request):
             return redirect('home')
     else:
         form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'sign_up.html', {'form': form})
 
 
 def login_(request):
@@ -36,10 +36,11 @@ def login_(request):
 
 def logout_(request):
     logout(request)
+    pass
 
 
 def home(request):
-    return render(request, """home page""")
+    return render(request, 'home.html')
 
 
 @login_required(login_url="/login")
