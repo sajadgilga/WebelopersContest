@@ -85,7 +85,7 @@
                                                         <i class="fa fa-user-o"></i>
                                                     </span>
                                                 </div>
-                                                <input type="text" name="username" placeholder="user name"  class="form-control">
+                                                <input type="text" name="username" placeholder="user name"  class="form-control" id="id_username">
                                             </div>
                                             <div class="input-group" style="margin-top: 15px;">
                                                 <div class="input-group-prepend">
@@ -93,9 +93,13 @@
                                                         <i class="fa fa-key"></i>
                                                     </span>
                                                 </div>
-                                                <input type="password" name="password" placeholder="password" class="form-control">
+                                                <input type="password" name="password" placeholder="password" class="form-control" id="id_password">
                                             </div>
-                                            <button style="margin-top: 15px;" class="positive ui fluid button">Login</button>
+                                            <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">Login</button>
+
+                                            {% if error %}
+                                            <p>نام کاربری یا گذرواژه غلط است</p>
+                                            {% endif %}
                                         </form>
                                     </div>
                                 </div>

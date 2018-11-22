@@ -50,7 +50,7 @@ def logout_(request):
 
 
 def home(request):
-    return render(request, 'home.html', {'isLogedIn': (request.user != None)})
+    return render(request, 'home.html', {'isLoggedIn': (request.user is not None)})
 
 
 @login_required(login_url="/login")
