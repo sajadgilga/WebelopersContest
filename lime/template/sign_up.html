@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>sign up</title>
+    <link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="/static/semantic/dist/semantic.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/font-awesome.css">
+    <style type="text/css">
+        body{
+            background: #ffffff url(https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        #main_content{
+            background: #ffffff;
+            margin-top: 20%;
+            border-radius: 20px;
+            height: 400px;
+            width: 100%;
+            opacity: .5;
+            transition: all .2s ease-out;
+            font-family: samim;
+        }
+        #main_content:hover{
+            opacity: 1;
+        }
+        @font-face {
+            font-family: 'samim';
+            src: url('../static/fonts/Samim.eot');
+            src: url('../static/fonts/Samim.woff') format('woff'), url('../static/fonts/Samim.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
 
+<div class="container-fluid">
+    <div class="row">
+            <div class="ui borderless main menu placeholder" style="margin-left: 32%; margin-top: 10px; position: fixed" id="id_navbar">
+                <div class="ui text container">
+                    <div class="header item">
+                        OSTAD Joo
+                    </div>
+         <a class="item" href="/home" id="id_navbar_home">
+                        Home
+                    </a>
+                    <a class="item" href="/login" id="id_navbar_login">
+                        Login
+                    </a>
+                    <a class="item" href="/signup" id="id_navbar_signup">
+                        Sign up
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="container-fluid" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-8">
+{#                    <div id="main_content">#}
+                        <div class="row">
+                            <div class="col-8 col-xl-10" style="padding: 25px; min-width: 400px;">
+                                <div class="card bg-light">
+                                    <div class="card-header">
+                                        <h3 class="card-title" style="text-align: right">
+                                            ثبت نام
+                                        </h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="." method="post"> {%csrf_token%} <!--. means submitting the form to
+                                         the url of this page -->
+
+                                            <div class="input-group" style="margin-top: 15px;">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-user-md"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="text" name="name" placeholder="first name" class="form-control">
+                                            </div>
+
+                                            <div class="input-group" style="margin-top: 15px;">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="text" name="family" placeholder="last name" class="form-control">
+                                            </div>
+
+                                            <div class="input-group" style="margin-top: 15px;">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-user-o"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="text" name="username" placeholder="user name"  class="form-control">
+                                            </div>
+                                            <div class="input-group" style="margin-top: 15px;">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-key"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="password" name="password" placeholder="password" class="form-control">
+                                            </div>
+
+
+
+                                            <div class="input-group" style="margin-top: 15px;">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-key"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="password" name="re-password" placeholder="retype password" class="form-control">
+                                            </div>
+                                            <div class="input-group" style="margin-top: 15px;">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-mail-forward"></i>
+                                                    </span>
+                                                </div>
+                                                <input type="email" name="email" placeholder="Email" class="form-control">
+                                            </div>
+                                            <button style="margin-top: 15px;" class="positive ui fluid button">Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+{#                        </div>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
