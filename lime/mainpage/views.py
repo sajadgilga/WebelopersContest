@@ -87,7 +87,21 @@ def user_profile(request):
 
 @login_required(login_url="/login")
 def edit_profile1(request):
-    pass
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            user = User.objects.get(username=username)
+            user.first_name = form.data.get('name')
+            user.last_name = form.data.get('family')
+            user.save()
+            return render(request, 'profile.html',
+                          {"username": user.username, "first_name": user.first_name, "last_name": user.last_name})
+
+    return redirect('.')
+
+
 
 
 
