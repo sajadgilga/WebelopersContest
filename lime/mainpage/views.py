@@ -2,15 +2,18 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.core.files.storage import FileSystemStorage
 from django.core.mail import send_mail, EmailMessage
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 
 # Create your views here.
+from mainpage.models import UserProfile
+
 
 def signup_(request):
-    error = None
+    error = ''
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
 
@@ -21,13 +24,17 @@ def signup_(request):
         if User.objects.filter(email=form.data.get('email')).exists():
             error = 'کاربری با ایمیل وارد شده وجود دارد'
 
-        if error is None and form.is_valid():
+        if error is '' and form.is_valid():
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = User.objects.create_user(username, email=form.data.get('email'), password=raw_password)
             user.first_name = form.data.get('name')
             user.last_name = form.data.get('family')
             user.save()
+            user_profile = UserProfile.objects.get_or_create(user=user, gender='F')
+            # user_profile.gender='F'
+            # user_profile.user = user
+            # user_profile.save()
 
             user = authenticate(username=username, password=raw_password)
 
@@ -45,7 +52,7 @@ def login_(request):
         if user is not None:
             login(request, user)
             return HttpResponseRedirect("/home")
-        return render(request, "login_form.html", {"error": True})
+        return render(request, "login_form.html", {"error": 'نام کاربری یا گذرواژه غلط است'})
     return render(request, "login_form.html")
 
 
@@ -81,8 +88,15 @@ def home(request, accept=0):
 @login_required(login_url="/login")
 def user_profile(request):
     user = request.user
+    user_profile = UserProfile.objects.get(user=user)
     return render(request, "profile.html",
-                  {"username": user.username, "first_name": user.first_name, "last_name": user.last_name})
+                  {"username": user.username,
+                   "first_name": user.first_name,
+                   "last_name": user.last_name,
+                   'gender': user_profile.gender,
+                   "bio": user_profile.bio,
+                   'picture': user_profile.picture,
+                   })
 
 
 @login_required(login_url="/login")
@@ -95,9 +109,17 @@ def change(request):
         user.first_name = form.data.get('name')
         user.last_name = form.data.get('lastname')
         user.save()
-        return render(request, 'profile.html',
-                      {"username": user.username, "first_name": user.first_name, "last_name": user.last_name})
+        user_profile = UserProfile.objects.get(user=user)
+        user_profile.bio = form.data.get('bio')
+        user_profile.gender = form.data.get('gender')
+        user_profile.picture = request.FILES['picture']
 
+        # myfile = request.FILES['myfile']
+        # fs = FileSystemStorage()
+        # filename = fs.save(myfile.name, myfile)
+        # uploaded_file_url = fs.url(filename)
+        user_profile.save()
+        return HttpResponseRedirect('/profile')
     return render(request, 'editProf.html')
 
 
@@ -127,8 +149,8 @@ def contact(request):
             return render(request, 'ContactUs.html', {
                 'error': error
             })
-        # email = EmailMessage(title, text + email, to=['ostadju@fastmail.com'])
-        # email.send()
+        email = EmailMessage(title, 'opinion: ' + text + '\nemail: ' + email, to=['ostadju@fastmail.com'])
+        email.send()
         # send_mail(
         #     title,
         #     text + email,

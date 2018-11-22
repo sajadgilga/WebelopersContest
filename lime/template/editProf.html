@@ -328,7 +328,7 @@
         تغییر جو
       </div>
     </h2>
-    <form class="ui large form" action="." method="post" id="myform">{%csrf_token%}
+    <form class="ui large form" action="." method="post" name="myform" enctype="multipart/form-data">{%csrf_token%}
       <div class="ui stacked segment">
 
           <div class="field">
@@ -345,10 +345,18 @@
             <i class="user icon"></i>
           </div>
         </div>
+
+
+          <div class="field">
+              <label>Bio</label>
+              <div class="ui left icon input">
+                   <input type="text" name="bio" id="id_bio">
+            <i class="icon"></i>
+          </div>
           <div class="field">
           <label>gender</label>
           <div class="ui left icon input">
-               <select class="ui fluid dropdown" form="myform">
+               <select class="ui fluid dropdown" name="gender" id="id_gender">
                     <option value="M">مرد</option>
                     <option value="F">زن</option>
               </select>
@@ -356,14 +364,15 @@
           </div>
         </div>
 
+        </div>
 
           <div class="field">
-              <label>Bio</label>
+              <label>picture</label>
               <div class="ui left icon input">
-                   <textarea form="myform" name="text" id="id_text"></textarea>
-            <i class="icon"></i>
+            <input type="file" name="picture" id="id_picture">
+            <i class="image icon"></i>
           </div>
-        </div>
+
            <button style="margin-top: 15px;" class="ui blue fluid button" id="id_submit">ارسال</button>
 
         </div>
