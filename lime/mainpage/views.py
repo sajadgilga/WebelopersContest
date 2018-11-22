@@ -36,7 +36,7 @@ def login_(request):
 
 def logout_(request):
     logout(request)
-    pass
+    return HttpResponseRedirect("/login")
 
 
 def home(request):
