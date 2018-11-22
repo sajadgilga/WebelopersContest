@@ -1,0 +1,33 @@
+body{
+    background-color: #539cff ;
+}
+.container{
+    margin:  30% 20% 0 20%;
+}
+.div-form{
+    background-color: #0b2e13;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap
+}
+
+.form{
+    background-color: antiquewhite;
+    align-content: center;
+    padding: 30px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn1{
+
+    margin: 30px;
+}
+
+.form-div div {
+    margin: 5px 0 5px 0;
+}

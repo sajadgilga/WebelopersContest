@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">header</div>
+    <div class="main">main
+
+        {% for car in cars %}
+        <div class="car-card">
+            <img class="pic" src={{car.picture}}>
+            <div>{{ car.name }}</div>
+            <div>{{ car.company }}</div>
+        </div>
+        {% endfor %}
+
+    </div>
+    <div class="navigation">nav</div>
+</div>
+</body>
+</html>
