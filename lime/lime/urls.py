@@ -28,4 +28,5 @@ urlpatterns = [
     path('profile/', views.user_profile),
     path('home/<int:accept>/', views.home),
     path('contact/', views.contact),
+    path('change/', views.change),
 ]

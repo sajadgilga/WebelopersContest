@@ -86,29 +86,28 @@ def user_profile(request):
 
 
 @login_required(login_url="/login")
-def edit_profile1(request):
+def change(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
+        # if form.is_valid():
+        username = request.user.username
+        user = User.objects.get(username=username)
+        user.first_name = form.data.get('name')
+        user.last_name = form.data.get('lastname')
+        user.save()
+        return render(request, 'profile.html',
+                      {"username": user.username, "first_name": user.first_name, "last_name": user.last_name})
 
-        if form.is_valid():
-            username = form.cleaned_data.get('username')
-            user = User.objects.get(username=username)
-            user.first_name = form.data.get('name')
-            user.last_name = form.data.get('family')
-            user.save()
-            return render(request, 'profile.html',
-                          {"username": user.username, "first_name": user.first_name, "last_name": user.last_name})
-
-    return redirect('.')
-
+    return render(request, 'editProf.html')
 
 
 
 
 
-@login_required(login_url="/login")
-def edit_profile2(request):
-    return render(request, """user_profile2""")
+#
+# @login_required(login_url="/login")
+# def change(request):
+#     return render(request, 'editProf.html')
 
 
 def contact(request):
@@ -139,3 +138,5 @@ def contact(request):
         # )
         return HttpResponseRedirect('/home/1')
     return render(request, 'ContactUs.html')
+
+
