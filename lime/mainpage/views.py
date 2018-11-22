@@ -55,11 +55,19 @@ def logout_(request):
 
 
 def home(request, accept=0):
+    # user = User.objects.filter(request.user).get()
     if accept != 0:
         return render(request, 'home.html', {'message': 'درخواست شما ثبت شد',
-                                             'isLoggedIn': (request.user is not None)
+                                             'isLoggedIn': (request.user is not None),
+                                             'name':request.user.first_name,
+                                             'family':request.user.last_name,
+                                             'username':request.user.username
                                              })
-    return render(request, 'home.html', {'isLoggedIn': (request.user is not None)})
+
+    return render(request, 'home.html', {'isLoggedIn': (request.user is not None),
+                                             'name':request.user.first_name,
+                                             'family':request.user.last_name,
+                                             'username':request.user.username})
 
 
 @login_required(login_url="/login")
@@ -96,8 +104,8 @@ def contact(request):
             return render(request, 'ContactUs.html', {
                 'error': error
             })
-        email = EmailMessage(title, text + email, to=['ostadju@fastmail.com'])
-        email.send()
+        # email = EmailMessage(title, text + email, to=['ostadju@fastmail.com'])
+        # email.send()
         # send_mail(
         #     title,
         #     text + email,
