@@ -9,27 +9,31 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 def signup_(request):
+    error = None
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
-        if form.is_valid():
+
+        if form.data.get('password1') != form.data.get('password2'):
+            error = 'گذرواژه و تکرار گذرواژه یکسان نیستند'
+        if User.objects.filter(username=form.data.get('username')).exists():
+            error = "کاربری با نام کاربری وارد شده وجود دارد"
+        if User.objects.filter(email=form.data.get('email')).exists():
+            error = 'کاربری با ایمیل وارد شده وجود دارد'
+
+        if error is None and form.is_valid():
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
-
             user = User.objects.create_user(username, email=form.data.get('email'), password=raw_password)
             user.first_name = form.data.get('name')
             user.last_name = form.data.get('family')
-
             user.save()
-
-            # form.save()
 
             user = authenticate(username=username, password=raw_password)
 
             login(request, user)
             return redirect('/home')
-    else:
-        form = UserCreationForm()
-    return render(request, 'sign_up.html', {'form': form})
+
+    return render(request, 'sign_up.html', {'error': error})
 
 
 def login_(request):
@@ -46,7 +50,7 @@ def login_(request):
 
 def logout_(request):
     logout(request)
-    return HttpResponseRedirect("/login")
+    return HttpResponseRedirect("/home")
 
 
 def home(request):

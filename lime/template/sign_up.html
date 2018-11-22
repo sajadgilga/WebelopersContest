@@ -135,6 +135,9 @@
                                             </div>
                                             <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">Login</button>
                                         </form>
+                                        {% if error is not None %}
+                                        <p>{{ error }}</p>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
