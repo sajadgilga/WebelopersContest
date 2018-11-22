@@ -56,18 +56,26 @@ def logout_(request):
 
 def home(request, accept=0):
     # user = User.objects.filter(request.user).get()
+    if request.user.id is not None:
+        fname = request.user.first_name
+        lname = request.user.last_name
+        username = request.user.username
+    else:
+        fname=''
+        lname=''
+        username=''
     if accept != 0:
         return render(request, 'home.html', {'message': 'درخواست شما ثبت شد',
-                                             'isLoggedIn': (request.user is not None),
-                                             'name':request.user.first_name,
-                                             'family':request.user.last_name,
-                                             'username':request.user.username
+                                             'isLoggedIn': (request.user.id is not None),
+                                             'name':fname,
+                                             'family':lname,
+                                             'username':username
                                              })
 
-    return render(request, 'home.html', {'isLoggedIn': (request.user is not None),
-                                             'name':request.user.first_name,
-                                             'family':request.user.last_name,
-                                             'username':request.user.username})
+    return render(request, 'home.html', {'isLoggedIn': (request.user.id is not None),
+                                             'name':fname,
+                                             'family':lname,
+                                             'username':username})
 
 
 @login_required(login_url="/login")
