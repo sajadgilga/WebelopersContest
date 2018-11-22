@@ -56,15 +56,17 @@ def logout_(request):
 
 def home(request, accept=0):
     if accept != 0:
-        return render(request, 'home.html', {'message': 'درخواست شما ثبت شد' ,
-                                              'isLoggedIn': (request.user is not None)
-                                              })
+        return render(request, 'home.html', {'message': 'درخواست شما ثبت شد',
+                                             'isLoggedIn': (request.user is not None)
+                                             })
     return render(request, 'home.html', {'isLoggedIn': (request.user is not None)})
 
 
 @login_required(login_url="/login")
 def user_profile(request):
-    return render(request, """user_profile""")
+    user = request.user
+    return render(request, "profile.html",
+                  {"username": user.username, "first_name": user.first_name, " last_name": user.last_name})
 
 
 @login_required(login_url="/login")
@@ -77,10 +79,9 @@ def edit_profile2(request):
     return render(request, """user_profile2""")
 
 
-@login_required(login_url="/login")
 def contact(request):
     if request.method == 'POST':
-        error=''
+        error = ''
         form = UserCreationForm(request.POST)
         text = form.data.get('text')
         title = form.data.get('title')
@@ -95,14 +96,14 @@ def contact(request):
             return render(request, 'ContactUs.html', {
                 'error': error
             })
-        # email = EmailMessage(title, text + email, to=['ostadju@fastmail.com'])
-        # email.send()
-        send_mail(
-            title,
-            text + email,
-            '0.0.0.0:8000',
-            ['ostadju@fastmail.com'],
-            fail_silently=False,
-        )
+        email = EmailMessage(title, text + email, to=['ostadju@fastmail.com'])
+        email.send()
+        # send_mail(
+        #     title,
+        #     text + email,
+        #     '0.0.0.0:8000',
+        #     ['ostadju@fastmail.com'],
+        #     fail_silently=False,
+        # )
         return HttpResponseRedirect('/home/1')
     return render(request, 'ContactUs.html')

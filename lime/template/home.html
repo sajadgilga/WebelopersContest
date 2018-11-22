@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
     <title>استادت رو بجو</title>
     <link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css">
     <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
     <script src="/static/semantic/dist/semantic.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"/>
     <link type="text/css" rel="stylesheet" href="/static/css/font-awesome.css">
     <style type="text/css">
-        body{
+        body {
             background: #ffffff url(https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg) no-repeat center center fixed;
             background-size: cover;
         }
-        #main_content{
+
+        #main_content {
             background: #ffffff;
             margin-top: 20%;
             border-radius: 20px;
@@ -25,9 +27,11 @@
             transition: all .2s ease-out;
             font-family: samim;
         }
-        #main_content:hover{
+
+        #main_content:hover {
             opacity: 1;
         }
+
         @font-face {
             font-family: 'samim';
             src: url('../static/fonts/Samim.eot');
@@ -42,35 +46,39 @@
 
 <div class="container-fluid">
     <div class="row">
-            <div class="ui borderless main menu" style="margin-left: 20%; margin-top: 10px; position: fixed; min-width: 800px" id="id_navbar">
-                <div class="ui text container">
-                    <div class="header item">
-                        OSTAD Joo
-                    </div>
-                    <a class="item" href="/home" id="id_navbar_home">
-                        Home
-                    </a>
-
-                    <a class="item" href="/signup" id="id_navbar_signup">
-                        Sign up
-                    </a>
-
-                    <a class="item" href="/login" id="id_navbar_login">
-                        Login
-                    </a>
-
-                    <a class="item" href="/contact" id="id_navbar_contact_us">
-                        Contact us
-                    </a>
-
-                    <a class="item" href="/logout" id="id_navbar_logout">
-                        <p>
-                            سلام. به سامانه استادجو خوش آمدید.
-                        </p>
-                    </a>
+        <div class="ui borderless main menu" style="margin-left: 25%; margin-top: 10px; position: fixed" id="id_navbar">
+            <div class="ui text container">
+                <div class="header item">
+                    OSTAD Joo
                 </div>
+                <a class="item" href="" id="id_navbar_home">
+                    Home
+                </a>
+
+                <a class="item" href="/signup" id="id_navbar_signup">
+                    Sign up
+                </a>
+
+                <a class="item" href="/login" id="id_navbar_login">
+                    Login
+                </a>
+
+                <a class="item" href="/contact" id="id_navbar_contact_us">
+                    Contact us
+                </a>
+                {% if isLoggedIn %}
+                <a class="item" href="/logout" id="id_navbar_logout">
+                    <p>
+                        Log out
+                    </p>
+                </a>
+                <a class="item" href="/profile" id="id_navbar_profile">
+                    <p> Profile </p>
+                </a>
+                {% endif %}
             </div>
         </div>
+    </div>
 </div>
 
 <div></div>
