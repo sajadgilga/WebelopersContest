@@ -51,7 +51,7 @@ def login_(request):
 
 def logout_(request):
     logout(request)
-    return HttpResponseRedirect("/home")
+    return render(request, "home.html",{"isLoggedIn": False})
 
 
 def home(request, accept=0):
@@ -71,6 +71,8 @@ def user_profile(request):
 
 @login_required(login_url="/login")
 def edit_profile1(request):
+    if request.method == 'POST':
+
     return render(request, """user_profile1""")
 
 
