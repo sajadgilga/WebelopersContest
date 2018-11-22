@@ -39,9 +39,8 @@ def logout_(request):
     return HttpResponseRedirect("/login")
 
 
-@login_required(login_url="/login")
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html', {'isLogedIn': (request.user != None)})
 
 
 @login_required(login_url="/login")
