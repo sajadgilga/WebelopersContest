@@ -41,26 +41,98 @@
         }
     </style>
 
+  <script src="Sticky%20Example%20-%20Semantic_files/dropdown.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+            .main.container {
+        margin-top: 2em;
+      }
+
+      .main.menu {
+        margin-top: 4em;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        transition:
+          box-shadow 0.5s ease,
+          padding 0.5s ease
+        ;
+      }
+      .main.menu .item img.logo {
+        margin-right: 1.5em;
+      }
+
+      .overlay {
+        float: left;
+        margin: 0em 3em 1em 0em;
+      }
+      .overlay .menu {
+        position: relative;
+        left: 0;
+        transition: left 0.5s ease;
+      }
+
+      .main.menu.fixed {
+        background-color: #FFFFFF;
+        border: 1px solid #DDD;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+      .overlay.fixed .menu {
+        left: 800px;
+      }
+
+  </style>
+
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="ui borderless main menu" style="margin-left: 25%; margin-top: 10px; position: fixed" id="id_navbar">
+        <div class="ui borderless main menu"{% comment %} style="margin-left: 25%; margin-top: 10px; position: fixed"{% endcomment %} id="id_navbar">
             <div class="ui text container">
                 <div class="header item">
+                    <img class="logo" src="/static/imgs/prof.svg">
                     OSTAD Joo
                 </div>
                 <a class="item" href="" id="id_navbar_home">
                     Home
                 </a>
 
-                <a class="item" href="/signup" id="id_navbar_signup">
-                    Sign up
-                </a>
 
                 <a class="item" href="/login" id="id_navbar_login">
                     Login
+                </a>
+
+
+                <a class="item" href="/signup" id="id_navbar_signup">
+                    Sign up
                 </a>
 
                 <a class="item" href="/contact" id="id_navbar_contact_us">
@@ -77,18 +149,63 @@
                 </a>
                 {% endif %}
             </div>
-        <div class="ui menu">
-             <p id="id_first_name">{{ name }}</p> , <p id="id_last_name">{{ family }}</p> ,<p id="id_username">{{ username }}</p>
-        </div>
-        </div>
+
     </div>
 </div>
+
+
+
+<div class="ui piled segment" style="text-align: right">
+  <h4 class="ui header">استاد جو</h4>
+  <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+   <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+   <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+</div>
+   </div>
+
+
 
 <div></div>
 <p>
     {{ message }}
 </p>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 {#<div class="container">#}
 {#    <div class="header">header</div>#}
 {#    <div class="main">main#}

@@ -41,45 +41,126 @@
         }
     </style>
 
+
+
+  <script src="Sticky%20Example%20-%20Semantic_files/dropdown.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+            .main.container {
+        margin-top: 2em;
+      }
+
+      .main.menu {
+        margin-top: 4em;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        transition:
+          box-shadow 0.5s ease,
+          padding 0.5s ease
+        ;
+      }
+      .main.menu .item img.logo {
+        margin-right: 1.5em;
+      }
+
+      .overlay {
+        float: left;
+        margin: 0em 3em 1em 0em;
+      }
+      .overlay .menu {
+        position: relative;
+        left: 0;
+        transition: left 0.5s ease;
+      }
+
+      .main.menu.fixed {
+        background-color: #FFFFFF;
+        border: 1px solid #DDD;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+      .overlay.fixed .menu {
+        left: 800px;
+      }
+
+  </style>
+
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="ui borderless main menu" style="margin-left: 25%; margin-top: 10px; position: fixed" id="id_navbar">
+        <div class="ui borderless main menu" id="id_navbar">
             <div class="ui text container">
                 <div class="header item">
+                    <img class="logo" src="/static/imgs/prof.svg">
                     OSTAD Joo
                 </div>
-                <a class="item" href="" id="id_navbar_home">
+                <a class="item" href="/home" id="id_navbar_home">
                     Home
                 </a>
 
                 <a class="item" href="/contact" id="id_navbar_contact_us">
                     Contact us
                 </a>
-                {% if isLoggedIn %}
                 <a class="item" href="/logout" id="id_navbar_logout">
                     <p>
                         Log out
                     </p>
                 </a>
-                <a class="item" href="/profile" id="id_navbar_profile">
-                    <p> Profile </p>
-                </a>
-                {% endif %}
+{#                <a class="item" href="/profile" id="id_navbar_profile">#}
+{#                    <p> Profile </p>#}
+{#                </a>#}
             </div>
-        <div class="ui menu" style="flex-direction: column">
-             <div id="id_first_name">{{ first_name }}</div>
-            <div id="id_last_name">{{ last_name }}</div>
-            <div id="id_username">{{ username }}</div>
-        </div>
+
         </div>
     </div>
 </div>
+<div class="container-fluid">
 
-<a href="/change" class="ui button" id="id_edit_profile">
+        <div class="ui piled left attached segments" style="flex-direction: column; max-width: 900px; margin: auto">
+             <div class="ui attached header" id="id_first_name"><h3>name:</h3></div>
+             <div class="ui attached segment" id="id_first_name">{{ first_name }}</div>
+            <div class="ui attached header" id="id_last_name"><h3>last name:</h3></div>
+            <div class="ui attached segment" id="id_last_name">{{ last_name }}</div>
+            <div class="ui attached header" id="id_username"><h3>username:</h3></div>
+            <div class="ui attached segment" id="id_username">{{ username }}</div>
+
+            <div class="ui segment">
+    <a href="/change" class="ui button" id="id_edit_profile" style="width:100px; margin: auto">
     edit profile
-</a>
+
+    </a>
+                </div>
+        </div>
+        </div>
+
 </body>
 </html>

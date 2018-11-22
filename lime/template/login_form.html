@@ -37,15 +37,138 @@
             font-style: normal;
         }
     </style>
+
+
+  <script src="Sticky%20Example%20-%20Semantic_files/dropdown.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+            .main.container {
+        margin-top: 2em;
+      }
+
+      .main.menu {
+        margin-top: 4em;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        transition:
+          box-shadow 0.5s ease,
+          padding 0.5s ease
+        ;
+      }
+      .main.menu .item img.logo {
+        margin-right: 1.5em;
+      }
+
+      .overlay {
+        float: left;
+        margin: 0em 3em 1em 0em;
+      }
+      .overlay .menu {
+        position: relative;
+        left: 0;
+        transition: left 0.5s ease;
+      }
+
+      .main.menu.fixed {
+        background-color: #FFFFFF;
+        border: 1px solid #DDD;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+      .overlay.fixed .menu {
+        left: 800px;
+      }
+
+  </style>
+
+
+  <script>
+  $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            username: {
+              identifier  : 'username',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your username'
+                }
+              ]
+            },
+            password: {
+              identifier  : 'password',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your password'
+                },
+                {
+                  type   : 'length[8]',
+                  prompt : 'Your password must be at least 8 characters'
+                }
+              ]
+            }
+          }
+        })
+      ;
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 
 <body>
 
 <div class="container-fluid">
     <div class="row">
-            <div class="ui borderless main menu placeholder" style="margin-left: 32%; margin-top: 10px; position: fixed" id="id_navbar">
+            <div class="ui borderless main menu"  id="id_navbar">
                 <div class="ui text container">
                     <div class="header item">
+                    <img class="logo" src="/static/imgs/prof.svg">
                         OSTAD Joo
                     </div>
          <a class="item" href="/home" id="id_navbar_home">
@@ -61,55 +184,139 @@
             </div>
         </div>
 </div>
-<div class="container-fluid" style="margin-top: 100px;">
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-6">
-            <div class="row">
-                <div class="col-8">
+{#<div class="container-fluid" style="margin-top: 100px;">#}
+{#    <div class="row">#}
+{#        <div class="col-4"></div>#}
+{#        <div class="col-6">#}
+{#            <div class="row">#}
+{#                <div class="col-8">#}
 {#                    <div id="main_content">#}
-                        <div class="row">
-                            <div class="col-8 col-xl-10" style="padding: 25px; min-width: 400px;">
-                                <div class="card bg-light">
-                                    <div class="card-header">
-                                        <h3 class="card-title" style="text-align: right">
-                                            به سامانه استاد جو خوش آمدید
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <form action="." method="post"> {%csrf_token%} <!--. means submitting the form to
-                                         the url of this page -->
-                                            <div class="input-group">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">
-                                                        <i class="fa fa-user-o"></i>
-                                                    </span>
-                                                </div>
-                                                <input type="text" name="username" placeholder="user name"  class="form-control" id="id_username">
-                                            </div>
-                                            <div class="input-group" style="margin-top: 15px;">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fa fa-key"></i>
-                                                    </span>
-                                                </div>
-                                                <input type="password" name="password" placeholder="password" class="form-control" id="id_password">
-                                            </div>
-                                            <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">Login</button>
+{#                        <div class="row">#}
+{#                            <div class="col-8 col-xl-10" style="padding: 25px; min-width: 400px;">#}
+{#                                <div class="card bg-light">#}
+{#                                    <div class="card-header">#}
+{#                                        <h3 class="card-title" style="text-align: right">#}
+{#                                            به سامانه استاد جو خوش آمدید#}
+{#                                        </h3>#}
+{#                                    </div>#}
+{#                                    <div class="card-body">#}
+{#                                        <form action="." method="post" class="ui form"> {%csrf_token%} <!--. means submitting the form to#}
+{#                                         the url of this page -->#}
+{#                                            <div class="input-group">#}
+{#                                                <div class="input-group-append">#}
+{#                                                    <span class="input-group-text">#}
+{#                                                        <i class="fa fa-user-o"></i>#}
+{#                                                    </span>#}
+{#                                                </div>#}
+{#                                                <input type="text" name="username" placeholder="user name"  class="form-control" id="id_username">#}
+{#                                            </div>#}
+{#                                            <div class="input-group" style="margin-top: 15px;">#}
+{#                                                <div class="input-group-prepend">#}
+{#                                                    <span class="input-group-text">#}
+{#                                                        <i class="fa fa-key"></i>#}
+{#                                                    </span>#}
+{#                                                </div>#}
+{#                                                <input type="password" name="password" placeholder="password" class="form-control" id="id_password">#}
+{#                                            </div>#}
+{#                                            <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">Login</button>#}
 
-                                            {% if error %}
-                                            <p>نام کاربری یا گذرواژه غلط است</p>
-                                            {% endif %}
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+{#                                            {% if error %}#}
+{#                                            <p>نام کاربری یا گذرواژه غلط است</p>#}
+{#                                            {% endif %}#}
+{#                                        </form>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
 {#                        </div>#}
-                    </div>
-                </div>
-            </div>
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{#<div class="center aligned" style="min-width: fit-content">#}
+{#<div class="ui align-self-xl-center placeholder segment" style="max-width: 400px; position: relative; margin: auto">#}
+{#  <div class="ui one column very relaxed stackable grid">#}
+{#    <div class="column">#}
+{#      <form method="post" action="." class="ui form"> {% csrf_token %}#}
+{#        <div class="field">#}
+{#          <label>Username</label>#}
+{#          <div class="ui left icon input">#}
+{#             <input type="text" name="username" placeholder="user name"  class="form-control" id="id_username">#}
+{#            <i class="user icon"></i>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="field">#}
+{#          <label>Password</label>#}
+{#          <div class="ui left icon input">#}
+{#            <input type="password" name="password" placeholder="password" class="form-control" id="id_password">#}
+{#            <i class="lock icon"></i>#}
+{#          </div>#}
+{#        </div>#}
+{#           <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">Login</button>#}
+{##}
+{#        <input  class="ui blue submit button">Login</input>#}
+{#      </form>#}
+{#    </div>#}
+{#  </div>#}
+{#  <div class="ui horizontal divider">#}
+{#    Or#}
+{#  </div>#}
+{##}
+{#    <div class="middle aligned column">#}
+{#      <a class="ui huge blue button" href="/signup">#}
+{#        <i class="signup icon"></i>#}
+{#        Sign Up#}
+{#      </a>#}
+{#    </div>#}
+{#           {% if error %}#}
+{#                <p>username or password is incorrect</p>#}
+{#           {% endif %}#}
+{#</div>#}
+{#    </div>#}
+
+
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <img src="/static/imgs/prof.svg" class="image">
+      <div class="content">
+        وارد جوگر خود شوید
+      </div>
+    </h2>
+    <form class="ui large form" action="." method="post">{%csrf_token%}
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="username" placeholder="username" id="id_username">
+          </div>
         </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Password" id="id_password">
+          </div>
+        </div>
+{#        <div class="ui fluid large teal submit button">#}
+        <button class="ui fluid large teal submit button" id="id_submit">Login</button>
+        </div>
+{#      </div>#}
+
+      <div class="ui error message"></div>
+       {% if error != '' %}
+              <div style="color: #FF0000;">
+                      {{ error }}
+              </div>
+          {% endif %}
+    </form>
+
+    <div class="ui message">
+      New to us? <a href="/signup">Sign Up</a>
     </div>
+  </div>
 </div>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>تماس با استادجو</title>
- <link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css">
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -38,14 +38,130 @@
         }
     </style>
 
+  <script>
+  $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            title: {
+              identifier  : 'title',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your title'
+                }
+              ]
+            },
+            text: {
+              identifier  : 'text',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your text'
+                }
+              ]
+            }
+          }
+        })
+      ;
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+
+  <script src="Sticky%20Example%20-%20Semantic_files/dropdown.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+            .main.container {
+        margin-top: 2em;
+      }
+
+      .main.menu {
+        margin-top: 4em;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        transition:
+          box-shadow 0.5s ease,
+          padding 0.5s ease
+        ;
+      }
+      .main.menu .item img.logo {
+        margin-right: 1.5em;
+      }
+
+      .overlay {
+        float: left;
+        margin: 0em 3em 1em 0em;
+      }
+      .overlay .menu {
+        position: relative;
+        left: 0;
+        transition: left 0.5s ease;
+      }
+
+      .main.menu.fixed {
+        background-color: #FFFFFF;
+        border: 1px solid #DDD;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+      .overlay.fixed .menu {
+        left: 800px;
+      }
+
+  </style>
+
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-            <div class="ui borderless main menu" style="margin-left: 25%; margin-top: 10px; position: fixed" id="id_navbar">
+            <div class="ui borderless main menu"  id="id_navbar">
                 <div class="ui text container">
                     <div class="header item">
+                    <img class="logo" src="/static/imgs/prof.svg">
                         OSTAD Joo
                     </div>
                     <a class="item" href="/home" id="id_navbar_home">
@@ -60,7 +176,7 @@
                         Login
                     </a>
 
-                    <a class="item" href="/logout">
+                    <a class="item" href="/logout" id="id_navbar_login">
                         <p>
                            Log out
                         </p>
@@ -69,70 +185,125 @@
             </div>
         </div>
 </div>
-
-<div class="container-fluid" style="margin-top: 100px;">
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-6">
-            <div class="row">
-                <div class="col-8">
+{##}
+{#<div class="container-fluid" style="margin-top: 100px;">#}
+{#    <div class="row">#}
+{#        <div class="col-4"></div>#}
+{#        <div class="col-6">#}
+{#            <div class="row">#}
+{#                <div class="col-8">#}
 {#                    <div id="main_content">#}
-                        <div class="row">
-                            <div class="col-8 col-xl-10" style="padding: 25px; min-width: 400px;">
-                                <div class="card bg-light">
-                                    <div class="card-header">
-                                        <h3 class="card-title" style="text-align: right">
-                                            به استادجوت پیام بده
-                                        </h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <form action="." method="post" id="myform"> {%csrf_token%} <!--. means submitting the form to
-                                         the url of this page -->
-
-                                            <div class="input-group" >
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fa fa-file-text"></i>
-                                                    </span>
-                                                </div>
-                                                <input type="text" name="title" placeholder="title" class="form-control" id="id_title">
-                                            </div>
-
-                                              <div class="input-group" style="margin-top: 15px;">
-                                                <div class="input-group-append">
-
-                                                    <span class="input-group-text">
-                                                        <i class="fa fa-file-text"></i>
-                                                    </span>
-                                                    <textarea form="myform" name="text" id="id_text"></textarea>
-                                                </div>
+{#                        <div class="row">#}
+{#                            <div class="col-8 col-xl-10" style="padding: 25px; min-width: 400px;">#}
+{#                                <div class="card bg-light">#}
+{#                                    <div class="card-header">#}
+{#                                        <h3 class="card-title" style="text-align: right">#}
+{#                                            به استادجوت پیام بده#}
+{#                                        </h3>#}
+{#                                    </div>#}
+{#                                    <div class="card-body">#}
+{#                                        <form action="." method="post" id="myform" class="ui form"> {%csrf_token%} <!--. means submitting the form to#}
+{#                                         the url of this page -->#}
+{##}
+{#                                            <div class="input-group" >#}
+{#                                                <div class="input-group-prepend">#}
+{#                                                    <span class="input-group-text">#}
+{#                                                        <i class="fa fa-file-text"></i>#}
+{#                                                    </span>#}
+{#                                                <input type="text" name="title" placeholder="title" class="form-control" id="id_title">#}
+{#                                                </div>#}
+{#                                            </div>#}
+{##}
+{#                                              <div class="input-group" style="margin-top: 15px;">#}
+{#                                                <div class="input-group-append">#}
+{##}
+{#                                                    <span class="input-group-text">#}
+{#                                                        <i class="fa fa-file-text"></i>#}
+{#                                                    </span>#}
+{#                                                    <textarea form="myform" name="text" id="id_text"></textarea>#}
+{#                                                </div>#}
 {#                                                <input type="" name="username" placeholder="user name"  class="form-control">#}
-                                            </div>
-                                                       <div class="input-group" style="margin-top: 15px;">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fa fa-mail-forward"></i>
-                                                    </span>
-                                                </div>
-                                                <input type="email" name="email" placeholder="email" class="form-control" id="id_email">
-                                            </div>
-
-                                            <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">ارسال</button>
-                                        </form>
-                                        <div>
-                                            <p>
-                                                {{ error }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{#                                            </div>#}
+{#                                                       <div class="input-group" style="margin-top: 15px;">#}
+{#                                                <div class="input-group-prepend">#}
+{#                                                    <span class="input-group-text">#}
+{#                                                        <i class="fa fa-mail-forward"></i>#}
+{#                                                    </span>#}
+{#                                                                                                    <input type="email" name="email" placeholder="email" class="form-control" id="id_email">#}
+{##}
+{#                                                </div>#}
+{#                                            </div>#}
+{##}
+{#                                            <button style="margin-top: 15px;" class="positive ui fluid button" id="id_submit">ارسال</button>#}
+{#                                        </form>#}
+{#                                        <div>#}
+{#                                            <p>#}
+{#                                                {{ error }}#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
 {#                        </div>#}
-                    </div>
-                </div>
-            </div>
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+
+
+
+
+
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <img src="/static/imgs/prof.svg" class="image">
+      <div class="content">
+        به استادت بجو
+      </div>
+    </h2>
+    <form class="ui large form" action="." method="post" id="myform">{%csrf_token%}
+      <div class="ui stacked segment">
+
+          <div class="field">
+              <label>title</label>
+              <div class="ui left icon input">
+            <input type="text" name="title" placeholder="title" class="form-control" id="id_title">
+                  <i class="arrow icon"></i>
+          </div>
+          </div>
+
+          <div class="field">
+              <label>text</label>
+              <div class="ui left icon input">
+                   <textarea form="myform" name="text" id="id_text"></textarea>
+            <i class="icon"></i>
+          </div>
         </div>
-    </div>
+
+          <div class="field">
+              <label>email</label>
+              <div class="ui left icon input">
+                  <input type="email" name="email" placeholder="email" class="form-control" id="id_email">
+            <i class="icon"></i>
+          </div>
+        </div>
+           <button style="margin-top: 15px;" class="ui blue fluid button" id="id_submit">ارسال</button>
+        </div>
+{#      </div>#}
+
+          <div class="ui error message"></div>
+          {% if error != '' %}
+              <div style="color: #FF0000;">
+                      {{ error }}
+              </div>
+          {% endif %}
+    </form>
+
+  </div>
 </div>
 </body>
 </html>
