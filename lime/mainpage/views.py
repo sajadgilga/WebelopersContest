@@ -53,7 +53,11 @@ def logout_(request):
     return HttpResponseRedirect("/home")
 
 
-def home(request):
+def home(request, accept=0):
+    if accept != 0:
+        return render(request, 'home.html', {'message': 'درخواست شما ثبت شد' ,
+                                              'isLoggedIn': (request.user is not None)
+                                              })
     return render(request, 'home.html', {'isLoggedIn': (request.user is not None)})
 
 
@@ -70,3 +74,25 @@ def edit_profile1(request):
 @login_required(login_url="/login")
 def edit_profile2(request):
     return render(request, """user_profile2""")
+
+
+@login_required(login_url="/login")
+def contact(request):
+    if request.method == 'POST':
+        error=''
+        form = UserCreationForm(request.POST)
+        text = form.data.get('text')
+        title = form.data.get('title')
+        email = form.data.get('email')
+        if text is '' or title is '':
+            error = 'فیلد های اجباری را پر کنید'
+            return render(request, 'ContactUs.html', {
+                'error': error
+            })
+        if len(text) < 10 or len(text) > 250:
+            error = 'طول متن استاندارد نیست'
+            return render(request, 'ContactUs.html', {
+                'error': error
+            })
+        return HttpResponseRedirect('/home/1')
+    return render(request, 'ContactUs.html')

@@ -42,12 +42,12 @@
 
 <div class="container-fluid">
     <div class="row">
-            <div class="ui borderless main menu" style="margin-left: 25%; margin-top: 10px; position: fixed" id="id_navbar">
+            <div class="ui borderless main menu" style="margin-left: 20%; margin-top: 10px; position: fixed; min-width: 800px" id="id_navbar">
                 <div class="ui text container">
                     <div class="header item">
                         OSTAD Joo
                     </div>
-                    <a class="item" href="" id="id_navbar_home">
+                    <a class="item" href="/home" id="id_navbar_home">
                         Home
                     </a>
 
@@ -58,20 +58,25 @@
                     <a class="item" href="/login" id="id_navbar_login">
                         Login
                     </a>
-{#                    {% else %}#}
-                    {% if isLoggedIn %}
+
+                    <a class="item" href="/contact" id="id_navbar_contact_us">
+                        Contact us
+                    </a>
 
                     <a class="item" href="/logout" id="id_navbar_logout">
                         <p>
                             سلام. به سامانه استادجو خوش آمدید.
                         </p>
                     </a>
-                    {% endif %}
                 </div>
             </div>
         </div>
 </div>
 
+<div></div>
+<p>
+    {{ message }}
+</p>
 
 {#<div class="container">#}
 {#    <div class="header">header</div>#}
