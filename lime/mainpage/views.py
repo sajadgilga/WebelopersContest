@@ -2,6 +2,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.core.mail import send_mail, EmailMessage
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
@@ -94,5 +95,14 @@ def contact(request):
             return render(request, 'ContactUs.html', {
                 'error': error
             })
+        # email = EmailMessage(title, text + email, to=['ostadju@fastmail.com'])
+        # email.send()
+        send_mail(
+            title,
+            text + email,
+            '0.0.0.0:8000',
+            ['ostadju@fastmail.com'],
+            fail_silently=False,
+        )
         return HttpResponseRedirect('/home/1')
     return render(request, 'ContactUs.html')
