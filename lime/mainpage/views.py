@@ -82,14 +82,14 @@ def home(request, accept=0):
 def user_profile(request):
     user = request.user
     return render(request, "profile.html",
-                  {"username": user.username, "first_name": user.first_name, " last_name": user.last_name})
+                  {"username": user.username, "first_name": user.first_name, "last_name": user.last_name})
 
 
 @login_required(login_url="/login")
 def edit_profile1(request):
-    if request.method == 'POST':
+    pass
 
-    return render(request, """user_profile1""")
+
 
 
 @login_required(login_url="/login")
