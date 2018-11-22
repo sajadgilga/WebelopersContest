@@ -1,6 +1,7 @@
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
@@ -11,10 +12,19 @@ def signup_(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
+
+            user = User.objects.create_user(username, email=form.data.get('email'), password=raw_password)
+            user.first_name = form.data.get('name')
+            user.last_name = form.data.get('family')
+
+            user.save()
+
+            # form.save()
+
             user = authenticate(username=username, password=raw_password)
+
             login(request, user)
             return redirect('/home')
     else:
