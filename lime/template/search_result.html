@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
      <meta charset="utf-8">
-    <title>خودت رو بجو</title>
+    <title>استادت رو بجو</title>
     <link rel="stylesheet" type="text/css" href="/static/semantic/dist/semantic.min.css">
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -143,30 +143,9 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
 
-        <div class="ui piled left attached segments" style="flex-direction: column; max-width: 900px; margin: auto">
-             <div class="ui attached header" ><h3>name:</h3></div>
-             <div class="ui attached segment" id="id_first_name">{{ first_name }}</div>
-            <div class="ui attached header" ><h3>last name:</h3></div>
-            <div class="ui attached segment" id="id_last_name">{{ last_name }}</div>
-            <div class="ui attached header" ><h3>username:</h3></div>
-            <div class="ui attached segment" id="id_username">{{ username }}</div>
-            <div class="ui attached header" ><h3>gender:</h3></div>
-            <div class="ui attached segment" id="id_gender">{{ gender }}</div>
-            <div class="ui attached header"><h3>bio:</h3></div>
-            <div class="ui attached segment" id="id_bio">{{ bio }}</div>
-            <div class="ui attached header" ><h3>picture:</h3></div>
-            <div class="ui attached segment" {% comment %}id="id_picture"{% endcomment %}>{{ picture }}</div>
-
-            <div class="ui segment">
-    <a href="/change" class="ui button" id="id_edit_profile" style="width:100px; margin: auto">
-    edit profile
-
-    </a>
-                </div>
-        </div>
-        </div>
-
+{% for t in teachers %}
+    <p> {{ t }}</p>
+{% endfor %}
 </body>
 </html>

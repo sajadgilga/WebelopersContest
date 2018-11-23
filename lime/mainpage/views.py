@@ -7,7 +7,6 @@ from django.core.mail import send_mail, EmailMessage
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
-
 # Create your views here.
 from mainpage.models import UserProfile
 
@@ -19,29 +18,26 @@ def signup_(request):
 
         if form.data.get('password1') != form.data.get('password2'):
             error = 'گذرواژه و تکرار گذرواژه یکسان نیستند'
-        if User.objects.filter(username=form.data.get('username')).exists():
-            error = "کاربری با نام کاربری وارد شده وجود دارد"
-        if User.objects.filter(email=form.data.get('email')).exists():
-            error = 'کاربری با ایمیل وارد شده وجود دارد'
+        # if User.objects.filter(username=form.data.get('username')).exists():
+        #     error = "کاربری با نام کاربری وارد شده وجود دارد"
+        # if User.objects.filter(email=form.data.get('email')).exists():
+        #     error = 'کاربری با ایمیل وارد شده وجود دارد'
 
         if error is '' and form.is_valid():
-            group = Group(name='student')
-            pass
-            if form.data.get('type') is 'professor':
-                group = Group(name='professor')
-            group.save()
+            # group = Group(name='student')
+            # pass
+            # if form.data.get('type') is 'professor':
+            #     group = Group(name='professor')
+            # group.save()
 
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = User.objects.create_user(username, email=form.data.get('email'), password=raw_password)
             user.first_name = form.data.get('name')
             user.last_name = form.data.get('family')
-            user.groups.add(group)
+            # user.groups.add(group)
             user.save()
-            user_profile = UserProfile.objects.get_or_create(user=user, gender='F')
-            # user_profile.gender='F'
-            # user_profile.user = user
-            # user_profile.save()
+            user_profile = UserProfile.objects.get_or_create(user=user)
 
             user = authenticate(username=username, password=raw_password)
 
@@ -65,7 +61,7 @@ def login_(request):
 
 def logout_(request):
     logout(request)
-    return render(request, "home.html",{"isLoggedIn": False})
+    return render(request, "home.html", {"isLoggedIn": False})
 
 
 def home(request, accept=0):
@@ -75,32 +71,35 @@ def home(request, accept=0):
         lname = request.user.last_name
         username = request.user.username
     else:
-        fname=''
-        lname=''
-        username=''
+        fname = ''
+        lname = ''
+        username = ''
     if accept != 0:
         return render(request, 'home.html', {'message': 'درخواست شما ثبت شد',
                                              'isLoggedIn': (request.user.id is not None),
-                                             'name':fname,
-                                             'family':lname,
-                                             'username':username
+                                             'name': fname,
+                                             'family': lname,
+                                             'username': username
                                              })
 
     return render(request, 'home.html', {'isLoggedIn': (request.user.id is not None),
-                                             'name':fname,
-                                             'family':lname,
-                                             'username':username})
+                                         'name': fname,
+                                         'family': lname,
+                                         'username': username})
 
 
 @login_required(login_url="/login")
 def user_profile(request):
     user = request.user
+    gender = 'مرد'
     user_profile = UserProfile.objects.get(user=user)
+    if user_profile.gender is 'F':
+        gender = 'زن'
     return render(request, "profile.html",
                   {"username": user.username,
                    "first_name": user.first_name,
                    "last_name": user.last_name,
-                   'gender': user_profile.gender,
+                   'gender': gender,
                    "bio": user_profile.bio,
                    'picture': user_profile.image_tag(),
                    })
@@ -119,18 +118,12 @@ def change(request):
         user_profile = UserProfile.objects.get(user=user)
         user_profile.bio = form.data.get('bio')
         user_profile.gender = form.data.get('gender')
-        user_profile.picture = request.FILES['picture']
+        if len(request.FILES) is not 0:
+            user_profile.picture = request.FILES['picture']
 
-        # myfile = request.FILES['myfile']
-        # fs = FileSystemStorage()
-        # filename = fs.save(myfile.name, myfile)
-        # uploaded_file_url = fs.url(filename)
         user_profile.save()
         return HttpResponseRedirect('/profile')
     return render(request, 'editProf.html')
-
-
-
 
 
 #
@@ -169,3 +162,13 @@ def contact(request):
     return render(request, 'ContactUs.html')
 
 
+def search(request):
+    if request.method == 'GET':
+        form = UserCreationForm(request.GET)
+
+        if form.is_valid():
+            firstname = form.cleaned_data.get('first_name')
+            lastname = form.cleaned_data.get('last_name')
+            teachers = User.objects.get(groups='teacher', first_name__contains=firstname, last_name__contains=lastname)
+            return render(request, 'search_result.html', {'teachers': teachers})
+    return HttpResponseRedirect(".")
