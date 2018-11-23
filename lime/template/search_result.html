@@ -169,8 +169,8 @@
 
 {% for p in profs %}
     <div class="ui attached header"><h3>profosser: {{ forloop.counter }}</h3>  </div>
-    <div id="id_teacher_{{ forloop.counter0}}">
-        <div class="ui attached segment" id="id_username"> {{ p.username }}</div>
+    <div id="id_teacher_{{ forloop.counter|add:-1 }}">
+        <a href="{% url 'get_profile' p.username %}" class="ui attached segment" id="id_username"> {{ p.username }}</a>
         <div class="ui attached segment" id="id_last_name"> {{ p.last_name }}</div>
         <div class="ui attached segment" id="id_first_name"> {{ p.first_name }}</div>
     </div>
