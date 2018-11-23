@@ -5,8 +5,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User, Group
 from django.core.files.storage import FileSystemStorage
 from django.core.mail import send_mail, EmailMessage
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
+from django.core import serializers
 
 # Create your views here.
 from mainpage.models import UserProfile
@@ -195,14 +196,11 @@ def search(request):
         if phrase is '':
             return HttpResponseRedirect("")
 
-        profs = users_in_group.filter(first_name__contains=phrase) | users_in_group.filter(last_name__contains=phrase) | users_in_group.filter(username__contains=phrase)
+        profs = users_in_group.filter(first_name__contains=phrase) | users_in_group.filter(
+            last_name__contains=phrase) | users_in_group.filter(username__contains=phrase)
 
         return render(request, 'search_result.html', {'profs': profs})
     return HttpResponseRedirect("")
-
-
-def markdown(request):
-    pass
 
 
 def get_profile(request, username):
@@ -231,3 +229,20 @@ def get_profile(request, username):
                    'group': group,
                    })
 
+
+def delete_profile(request):
+    user = request.user
+    user.delete()
+    return render(request, "home.html")
+
+
+def json_search(request):
+    if request.GET:
+        users_in_group = Group.objects.get(name="professor").user_set.all()
+        phrase = request.GET.get('q')
+        if phrase is '':
+            return HttpResponseRedirect("")
+        profs = users_in_group.filter(first_name__contains=phrase) | users_in_group.filter(
+            last_name__contains=phrase) | users_in_group.filter(username__contains=phrase)
+        return HttpResponse(serializers.serialize('xml', profs, fields=('name', 'size')))
+    return HttpResponseRedirect
