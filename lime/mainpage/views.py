@@ -7,7 +7,6 @@ from django.core.mail import send_mail, EmailMessage
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
-
 # Create your views here.
 from mainpage.models import UserProfile
 
@@ -49,7 +48,7 @@ def signup_(request):
             user = authenticate(username=username, password=raw_password)
 
             login(request, user)
-            return redirect('/home')
+            return redirect('/')
 
     return render(request, 'sign_up.html', {'error': error})
 
@@ -68,7 +67,7 @@ def login_(request):
 
 def logout_(request):
     logout(request)
-    return render(request, "home.html",{"isLoggedIn": False})
+    return render(request, "home.html", {"isLoggedIn": False})
 
 
 def home(request, accept=0):
@@ -78,38 +77,39 @@ def home(request, accept=0):
         lname = request.user.last_name
         username = request.user.username
     else:
-        fname=''
-        lname=''
-        username=''
+        fname = ''
+        lname = ''
+        username = ''
     if accept != 0:
         return render(request, 'home.html', {'message': 'درخواست شما ثبت شد',
                                              'isLoggedIn': (request.user.id is not None),
-                                             'name':fname,
-                                             'family':lname,
-                                             'username':username
+                                             'name': fname,
+                                             'family': lname,
+                                             'username': username
                                              })
 
     return render(request, 'home.html', {'isLoggedIn': (request.user.id is not None),
-                                             'name':fname,
-                                             'family':lname,
-                                             'username':username})
+                                         'name': fname,
+                                         'family': lname,
+                                         'username': username})
 
 
 @login_required(login_url="/login")
 def user_profile(request):
     user = request.user
-    gender = ''
+    gender = 'مرد'
     bio = ''
-    picture= ''
+    picture = ''
     group = 'استاد'
     if user.groups.filter(name='student').exists():
         group = 'دانشجو'
 
     if (UserProfile.objects.filter(user=user).exists()):
         user_profile = UserProfile.objects.get(user=user)
-        gender=user_profile.gender
-        bio=user_profile.bio
-        picture=user_profile.image_tag()
+        if user_profile.gender is 'F':
+            gender = 'زن'
+        bio = user_profile.bio
+        picture = user_profile.image_tag()
 
     return render(request, "profile.html",
                   {"username": user.username,
@@ -132,7 +132,7 @@ def change(request):
         user.first_name = form.data.get('name')
         user.last_name = form.data.get('lastname')
         user.save()
-        if(UserProfile.objects.filter(user=user).exists()):
+        if (UserProfile.objects.filter(user=user).exists()):
             user_profile = UserProfile.objects.get(user=user)
             user_profile.bio = form.data.get('bio')
             user_profile.gender = form.data.get('gender')
@@ -141,9 +141,6 @@ def change(request):
 
         return HttpResponseRedirect('/profile')
     return render(request, 'editProf.html')
-
-
-
 
 
 #
@@ -185,10 +182,11 @@ def contact(request):
 def search(request):
     if request.method == 'GET':
         form = UserCreationForm(request.GET)
-
+        users_in_group = Group.objects.get(name="teacher").user_set.all()
+        """CHECK IT!!!!"""
         if form.is_valid():
-            firstname = form.cleaned_data.get('first_name')
-            lastname = form.cleaned_data.get('last_name')
-            teachers = User.objects.get(groups='teacher', first_name__contains=firstname, last_name__contains=lastname)
-            return render(request, 'search_result.html', {'teachers': teachers})
+            phrase = form.cleaned_data.get('professor')
+
+            profs = users_in_group.get(first_name__contains=phrase ) | users_in_group.get(last_name__contains=phrase)
+            return render(request, 'search_result.html', {'profs': profs})
     return HttpResponseRedirect(".")
