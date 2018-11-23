@@ -157,7 +157,8 @@
         </div>
     </div>
 </div>
-{% load markdownify %}
+{% load markdown_filter %}
+{#{% load markdownify %}#}
 <div class="container-fluid">
 
         <div class="ui piled left attached segments" style="flex-direction: column; max-width: 900px; margin: auto">
@@ -171,7 +172,7 @@
             <div class="ui attached header" ><h3>gender:</h3></div>
             <div class="ui attached segment" id="id_gender">{{ gender }}</div>
             <div class="ui attached header"><h3>bio:</h3></div>
-            <div class="ui attached segment" id="id_bio">{{ bio|markdownify }}</div>
+            <div class="ui attached segment" id="id_bio">{% comment %}{{ bio|markdownify }}{% endcomment %}  {{ bio|markdownify|safe }}</div>
             <div class="ui attached header" ><h3>picture:</h3></div>
             <div class="ui attached segment" {% comment %}id="id_picture"{% endcomment %}>{{ picture }}</div>
 

@@ -10,6 +10,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from mainpage.models import UserProfile
+from markdown import markdown
 
 
 def signup_(request):
@@ -110,6 +111,7 @@ def user_profile(request):
         if user_profile.gender is 'F':
             gender = 'زن'
         bio = user_profile.bio
+        bio = markdown(bio)
         # if user_profile.picture is not None :
         picture = user_profile.image_tag()
 
