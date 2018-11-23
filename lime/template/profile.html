@@ -112,6 +112,17 @@
 
   </style>
 
+    <script>
+        alertme = function(){
+        if (confirm('Are you sure you want to save this thing into the database?')) {
+            {#location.href = "http://127.0.0.1:8000/delete_profile";#}
+            window.location.replace("http://stackoverflow.com");
+} else {
+            event.preventDefault()
+}
+}
+    </script>
+
 </head>
 <body>
 
@@ -181,27 +192,27 @@
     edit profile
 
     </a>
-                    <a href="/profile/1" class="ui blue button" style="width:100px; margin: auto">
+                    <a onclick="alertme()" href="/delete_profile" class="ui blue button" id="id_remove_user" style="width:100px; margin: auto">
     delete profile
 
     </a>
                 </div>
 
-{% if delete == 1 %}
-            <div class="segment">
-            are you sure you want to do this?
-            </div>
-    <div class="segments">
-                <a href="/delete_profile" class="ui negative button"  id="id_remove_user">
-                    Yes
-                </a>
-
-                <a href="/profile" class="ui button"  id="id_remove_user">
-                    No
-                </a>
-    </div>
-            {% endif %}
-        </div>
+{#{% if delete == 1 %}#}
+{#            <div class="segment">#}
+{#            are you sure you want to do this?#}
+{#            </div>#}
+{#    <div class="segments">#}
+{#                <a href="/delete_profile" class="ui negative button">#}
+{#                    Yes#}
+{#                </a>#}
+{##}
+{#                <a href="/profile" class="ui button"  >#}
+{#                    No#}
+{#                </a>#}
+{#    </div>#}
+{#            {% endif %}#}
+{#        </div>#}
         </div>
 
 </body>
