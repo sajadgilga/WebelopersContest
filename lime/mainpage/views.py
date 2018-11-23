@@ -25,6 +25,7 @@ def signup_(request):
             error = 'کاربری با ایمیل وارد شده وجود دارد'
 
         if error is '' and form.is_valid():
+            # if form.data.get('type') is
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = User.objects.create_user(username, email=form.data.get('email'), password=raw_password)
@@ -95,7 +96,7 @@ def user_profile(request):
                    "last_name": user.last_name,
                    'gender': user_profile.gender,
                    "bio": user_profile.bio,
-                   'picture': user_profile.picture,
+                   'picture': user_profile.image_tag(),
                    })
 
 

@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf.urls.static import static
+
+from lime import settings
 from mainpage import views
 
 urlpatterns = [
@@ -29,4 +32,5 @@ urlpatterns = [
     path('home/<int:accept>/', views.home),
     path('contact/', views.contact),
     path('change/', views.change),
-]
+] + static(settings.STATIC_URL, document_root= settings.STATICFILES_DIRS)
+
