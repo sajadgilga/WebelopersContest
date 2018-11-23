@@ -34,5 +34,6 @@ urlpatterns = [
     path('change/', views.change),
     path('search/', views.search),
     path('get_profile/<str:username>/', views.get_profile, name='get_profile'),
+    path('delete_profile/', views.delete_profile())
 ] + static(settings.STATIC_URL, document_root= settings.STATICFILES_DIRS)
 
