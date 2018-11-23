@@ -9,8 +9,6 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from markdownify.templatetags import markdownify
-
 from mainpage.models import UserProfile
 
 
@@ -112,6 +110,7 @@ def user_profile(request):
         if user_profile.gender is 'F':
             gender = 'زن'
         bio = user_profile.bio
+        # if user_profile.picture is not None :
         picture = user_profile.image_tag()
 
     return render(request, "profile.html",
@@ -132,6 +131,7 @@ def change(request):
         # if form.is_valid():
         username = request.user.username
         user = User.objects.get(username=username)
+        # if form.data.get('name') is not '':
         user.first_name = form.data.get('name')
         user.last_name = form.data.get('lastname')
         user.save()
@@ -139,7 +139,8 @@ def change(request):
             user_profile = UserProfile.objects.get(user=user)
             user_profile.bio = form.data.get('bio')
             user_profile.gender = form.data.get('gender')
-            user_profile.picture = request.FILES['picture']
+            if len(request.FILES) is not 0:
+                user_profile.picture = request.FILES['picture']
             user_profile.save()
 
         return HttpResponseRedirect('/profile')
@@ -199,13 +200,11 @@ def search(request):
 
 
 def markdown(request):
-    markdownify.markdownify
+    pass
 
 
 def get_profile(request, username):
     user = User.objects.get(username=username)
-    # requset.user = user
-    # return user_profile(requset)
     gender = 'مرد'
     bio = ''
     picture = ''
@@ -213,7 +212,7 @@ def get_profile(request, username):
     if user.groups.filter(name='student').exists():
         group = 'دانشجو'
 
-    if UserProfile.objects.filter(user=user).exists():
+    if (UserProfile.objects.filter(user=user).exists()):
         user_profile = UserProfile.objects.get(user=user)
         if user_profile.gender is 'F':
             gender = 'زن'
