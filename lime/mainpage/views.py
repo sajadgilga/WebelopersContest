@@ -1,7 +1,7 @@
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.core.files.storage import FileSystemStorage
 from django.core.mail import send_mail, EmailMessage
 from django.http import HttpResponseRedirect
@@ -25,12 +25,18 @@ def signup_(request):
             error = 'کاربری با ایمیل وارد شده وجود دارد'
 
         if error is '' and form.is_valid():
-            # if form.data.get('type') is
+            group = Group(name='student')
+            pass
+            if form.data.get('type') is 'professor':
+                group = Group(name='professor')
+            group.save()
+
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = User.objects.create_user(username, email=form.data.get('email'), password=raw_password)
             user.first_name = form.data.get('name')
             user.last_name = form.data.get('family')
+            user.groups.add(group)
             user.save()
             user_profile = UserProfile.objects.get_or_create(user=user, gender='F')
             # user_profile.gender='F'

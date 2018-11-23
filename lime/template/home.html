@@ -41,7 +41,7 @@
         }
     </style>
 
-  <script src="Sticky%20Example%20-%20Semantic_files/dropdown.js"></script>
+{#  <script src="Sticky%20Example%20-%20Semantic_files/dropdown.js"></script>#}
   <script>
   $(document)
     .ready(function() {
@@ -50,10 +50,10 @@
       $('.main.menu').visibility({
         type: 'fixed'
       });
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 80
-      });
+      {#$('.overlay').visibility({#}
+      {#  type: 'fixed',#}
+      {#  offset: 80#}
+      {#});#}
 
       // lazy load images
       $('.image').visibility({
