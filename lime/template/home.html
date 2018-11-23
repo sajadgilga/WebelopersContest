@@ -160,10 +160,10 @@
 
                 <div class="left menu">
                     <div class="item">
-                      <form method="post" action="/search" >
+                      <form method="post" action="/search/" >{% csrf_token %}
                           <div class="field ui icon input">
                               <i class="link search icon"></i>
-                              <input type="text" placeholder="Search...">
+                              <input type="text" name="phrase" placeholder="Search...">
                           </div>
                           <button class="positive ui fluid button" id="id_submit">جو</button>
                       </form>

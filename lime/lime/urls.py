@@ -32,5 +32,6 @@ urlpatterns = [
     path('home/<int:accept>/', views.home),
     path('contact/', views.contact),
     path('change/', views.change),
+    path('search/', views.search)
 ] + static(settings.STATIC_URL, document_root= settings.STATICFILES_DIRS)
 

@@ -180,13 +180,16 @@ def contact(request):
 
 
 def search(request):
-    if request.method == 'GET':
-        form = UserCreationForm(request.GET)
-        users_in_group = Group.objects.get(name="teacher").user_set.all()
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        users_in_group = Group.objects.get(name="professor").user_set.all()
         """CHECK IT!!!!"""
-        if form.is_valid():
-            phrase = form.cleaned_data.get('professor')
+        # if form.is_valid():
+        phrase = form.data.get('phrase')
+        if phrase is '':
+            return HttpResponseRedirect("")
 
-            profs = users_in_group.get(first_name__contains=phrase ) | users_in_group.get(last_name__contains=phrase)
-            return render(request, 'search_result.html', {'profs': profs})
-    return HttpResponseRedirect(".")
+        profs = users_in_group.filter(first_name__contains=phrase) or users_in_group.filter(last_name__contains=phrase)
+
+        return render(request, 'search_result.html', {'profs': profs})
+    return HttpResponseRedirect("")

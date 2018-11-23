@@ -144,8 +144,10 @@
     </div>
 </div>
 
-{% for t in teachers %}
-    <p> {{ t }}</p>
+{% for p in profs %}
+    <p> {{ p }}</p>
+    <p> {{ p.family }}</p>
+    <p> {{ p.username }}</p>
 {% endfor %}
 </body>
 </html>
