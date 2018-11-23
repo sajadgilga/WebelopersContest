@@ -161,12 +161,14 @@
                 <div class="left menu">
                     <div class="item">
                       <form method="post" action="/search/" > {% csrf_token %}
-                          <div class="field ui icon input">
+                          <div class="field ui input">
 {#                              <i class="link search icon"></i>#}
                               <input type="text" name="phrase" placeholder="Search..." id="id_search_profiles_input">
-                              <button type="submit" class="ui blue button" id="id_search_profiles_button"><i class="fa fa-search"></i></button>
                           </div>
-                      </form>
+                          <div class="field">
+                          <button type="submit" class="ui blue button" id="id_search_profiles_button"></button>
+                        </div>
+                     </form>
                     </div>
                 </div>
             </div>

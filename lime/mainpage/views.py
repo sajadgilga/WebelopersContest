@@ -1,3 +1,4 @@
+from IPython.core.display import display_markdown
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -193,3 +194,37 @@ def search(request):
 
         return render(request, 'search_result.html', {'profs': profs})
     return HttpResponseRedirect("")
+
+
+def markdown(request):
+    pass
+
+
+def get_profile(request, username):
+    user = User.objects.get(usename=username)
+    # requset.user = user
+    # return user_profile(requset)
+    gender = 'مرد'
+    bio = ''
+    picture = ''
+    group = 'استاد'
+    if user.groups.filter(name='student').exists():
+        group = 'دانشجو'
+
+    if (UserProfile.objects.filter(user=user).exists()):
+        user_profile = UserProfile.objects.get(user=user)
+        if user_profile.gender is 'F':
+            gender = 'زن'
+        bio = user_profile.bio
+        picture = user_profile.image_tag()
+
+    return render(request, "profile.html",
+                  {"username": user.username,
+                   "first_name": user.first_name,
+                   "last_name": user.last_name,
+                   'gender': gender,
+                   "bio": bio,
+                   'picture': picture,
+                   'group': group,
+                   })
+
