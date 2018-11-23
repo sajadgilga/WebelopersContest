@@ -195,7 +195,7 @@ def search(request):
         if phrase is '':
             return HttpResponseRedirect("")
 
-        profs = users_in_group.filter(first_name__contains=phrase) or users_in_group.filter(last_name__contains=phrase)
+        profs = users_in_group.filter(first_name__contains=phrase) | users_in_group.filter(last_name__contains=phrase) | users_in_group.filter(username__contains=phrase)
 
         return render(request, 'search_result.html', {'profs': profs})
     return HttpResponseRedirect("")
