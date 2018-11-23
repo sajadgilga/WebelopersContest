@@ -135,6 +135,20 @@
                         Log out
                     </p>
                 </a>
+
+
+            <div class="left menu">
+                    <div class="item">
+                      <form method="post" action="/search/" > {% csrf_token %}
+                          <div class="field ui icon input">
+{#                              <i class="link search icon"></i>#}
+                              <input type="text" name="phrase" placeholder="Search..." id="id_search_profiles_input">
+                              <button type="submit" class="ui blue button" id="id_search_profiles_button"><i class="fa fa-search"></i></button>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
 {#                <a class="item" href="/profile" id="id_navbar_profile">#}
 {#                    <p> Profile </p>#}
 {#                </a>#}

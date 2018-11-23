@@ -138,16 +138,44 @@
 {#                <a class="item" href="/profile" id="id_navbar_profile">#}
 {#                    <p> Profile </p>#}
 {#                </a>#}
+
+
+
+            <div class="left menu">
+                    <div class="item">
+                      <form method="post" action="/search/" > {% csrf_token %}
+                          <div class="field ui icon input">
+{#                              <i class="link search icon"></i>#}
+                              <input type="text" name="phrase" placeholder="Search..." id="id_search_profiles_input">
+                              <button type="submit" class="ui blue button" id="id_search_profiles_button"><i class="fa fa-search"></i></button>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            </div>
             </div>
 
         </div>
     </div>
 </div>
 
+
+
+<div class="container-fluid">
+
+        <div class="ui piled left attached segments" style="flex-direction: column; max-width: 900px; margin: auto">
+
+
 {% for p in profs %}
-    <p> {{ p }}</p>
-    <p> {{ p.family }}</p>
-    <p> {{ p.username }}</p>
+    <div class="ui attached header"><h3>profosser: {{ forloop.counter }}</h3>  </div>
+    <div id="id_teacher_{{ forloop.counter|add:-1 }}">
+        <div class="ui attached segment" id="id_username"> {{ p.username }}</div>
+        <div class="ui attached segment" id="id_last_name"> {{ p.first_name }}</div>
+        <div class="ui attached segment" id="id_first_name"> {{ p.last_name }}</div>
+    </div>
 {% endfor %}
+        </div>
+</div>
 </body>
 </html>
