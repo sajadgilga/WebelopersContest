@@ -9,6 +9,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 # Create your views here.
+from markdownify.templatetags import markdownify
+
 from mainpage.models import UserProfile
 
 
@@ -197,11 +199,11 @@ def search(request):
 
 
 def markdown(request):
-    pass
+    markdownify.markdownify
 
 
 def get_profile(request, username):
-    user = User.objects.get(usename=username)
+    user = User.objects.get(username=username)
     # requset.user = user
     # return user_profile(requset)
     gender = 'مرد'
@@ -211,7 +213,7 @@ def get_profile(request, username):
     if user.groups.filter(name='student').exists():
         group = 'دانشجو'
 
-    if (UserProfile.objects.filter(user=user).exists()):
+    if UserProfile.objects.filter(user=user).exists():
         user_profile = UserProfile.objects.get(user=user)
         if user_profile.gender is 'F':
             gender = 'زن'
