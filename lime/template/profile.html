@@ -181,11 +181,26 @@
     edit profile
 
     </a>
-                    <a href="/delete_profile" class="ui negative button" id="id_remove_user" style="width:100px; margin: auto">
+                    <a href="/profile/1" class="ui blue button" style="width:100px; margin: auto">
     delete profile
 
     </a>
                 </div>
+
+{% if delete == 1 %}
+            <div class="segment">
+            are you sure you want to do this?
+            </div>
+    <div class="segments">
+                <a href="/delete_profile" class="ui negative button"  id="id_remove_user">
+                    Yes
+                </a>
+
+                <a href="/profile" class="ui button"  id="id_remove_user">
+                    No
+                </a>
+    </div>
+            {% endif %}
         </div>
         </div>
 

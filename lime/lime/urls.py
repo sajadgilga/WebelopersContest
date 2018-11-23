@@ -29,11 +29,12 @@ urlpatterns = [
     path('home/', views.home),
     path('logout/', views.logout_),
     path('profile/', views.user_profile),
+    path('profile/<int:delete>/', views.user_profile),
     path('home/<int:accept>/', views.home),
     path('contact/', views.contact),
     path('change/', views.change),
     path('search/', views.search),
     path('get_profile/<str:username>/', views.get_profile, name='get_profile'),
-    path('delete_profile/', views.delete_profile())
+    path('delete_profile/', views.delete_profile)
 ] + static(settings.STATIC_URL, document_root= settings.STATICFILES_DIRS)
 

@@ -98,7 +98,7 @@ def home(request, accept=0):
 
 
 @login_required(login_url="/login")
-def user_profile(request):
+def user_profile(request, delete=0):
     user = request.user
     gender = 'مرد'
     bio = ''
@@ -124,6 +124,7 @@ def user_profile(request):
                    "bio": bio,
                    'picture': picture,
                    'group': group,
+                   'delete': delete,
                    })
 
 
