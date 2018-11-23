@@ -1,9 +1,7 @@
-from IPython.core.display import display_markdown
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User, Group
-from django.core.files.storage import FileSystemStorage
 from django.core.mail import send_mail, EmailMessage
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -200,9 +198,6 @@ def search(request):
         return render(request, 'search_result.html', {'profs': profs})
     return HttpResponseRedirect("")
 
-
-def markdown(request):
-    pass
 
 
 def get_profile(request, username):
